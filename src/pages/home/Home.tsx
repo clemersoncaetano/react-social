@@ -2,8 +2,9 @@ import { useEffect } from "react"
 import { Header } from "../../components/header/Header"
 import { useNavigate } from "react-router-dom"
 import { apiController } from "../../controller/api.controller"
+import { Feed } from "../../components/feed/Feed"
+import style from "./style.module.css"
 import { Iconify } from "../../components/iconify/Iconify"
-
 export const Home=()=>{
     const navigate = useNavigate()
 
@@ -35,12 +36,17 @@ export const Home=()=>{
     },[])
     return <>
     <Header/>
-    <Iconify icon="mi:email"/>
-    <Iconify icon="weui:setting-filled"/>
-    <Iconify icon="bxs:user"/>
-    <main>
-
-        <p>Home</p>
+    
+    <main className={style.main}>
+        <Iconify icon="mi:email" color="red" />
+        <Iconify icon = "material-symbols:settings-rounded" color ="darkgrey"/>
+        <Iconify icon = "solar:user-bold" color="blue"/>
+        <Iconify icon = "solar:add-circle-bold" color="darkgrey"/>
+        <section className={style.profile}>
+            <p>the script</p>
+            <p>Meu perfil</p>
+        </section>
+        <Feed/>
     </main>
     </>
 }
