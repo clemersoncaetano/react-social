@@ -31,7 +31,9 @@ export const Login=()=>{
     }
     return <>
     <Header/>
-    <Iconify icon="arcticons:avatar-world"/>
+    <Iconify icon="arcticons:avatar-world" onClick={function (): void {
+            throw new Error("Function not implemented.")
+        } }/>
     <main className={style.main}>
         <form className={style.form} onSubmit={(event)=>fazerLogin(event)}>
             <fieldset>

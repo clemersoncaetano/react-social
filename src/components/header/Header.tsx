@@ -5,13 +5,17 @@ import style from "./style.module.css"
 export const Header =()=>{
     return <header className={style.header}>
         <fieldset className={style.fieldset}>
-            <Iconify icon="iconamoon:search-duotone" className={style.icon} />
+            <Iconify icon="iconamoon:search-duotone" className={style.icon} onClick={function (): void {
+                throw new Error("Function not implemented.")
+            } } />
             <input type="text" placeholder="escreva aqui alguma coisa" />
         </fieldset>
-        <nav>
-            <Link to={"/"}>Home</Link>
-            <Link to="/login">Login</Link>
-         <Link to="/cadastro">Cadastro</Link>
-        </nav>
+        <p>the script</p>
+        <div>
+        <Iconify icon="mi:email" color="dimgray" />
+        <Iconify icon="material-symbols:settings-rounded" color="dimgray"/>
+        <Iconify icon= "carbon:user-avatar-filled" color="blue"/>
+        <Iconify icon="solar:add-circle-bold" color="dimgray"/>
+        </div>
     </header>
 }

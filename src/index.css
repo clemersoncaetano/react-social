@@ -24,9 +24,11 @@
 
   --border-radius: 12px;
   --font-title: 24px;
-
 }
-
+body {
+  background-color: var(--color-gray-200);
+  color:black;
+}
 button {
   cursor: pointer;
   padding: 8px 24px;
@@ -48,7 +50,8 @@ input {
   height: 45px;
   border-radius: var(--border-radius);
   outline: none;
-  padding-left: 8px;
+  padding-left: 12px;
   background-color: var(--color-gray-200);
-  border: none;
+  border: 1px solid var(--color-gray-400);
+  text-align: justify;
 }

@@ -1,0 +1,19 @@
+.main {
+    display: flex;
+    gap: 32px;
+}
+.home{
+    padding: 30px;
+}
+.profile {
+    width: 60%;
+    background-color: #fff;
+    display: flex
+;    gap: 32px;
+}
+
+
+
+
+
+

@@ -31,20 +31,29 @@ export const Home=()=>{
         if(!token){
             //navigate("/login")
         }else{
-            //validateUser(token)
+           // validateUser(token)
         }
     },[])
+    
     return <>
     <Header/>
+          
     
     <main className={style.main}>
-        <Iconify icon="mi:email" color="red" />
-        <Iconify icon = "material-symbols:settings-rounded" color ="darkgrey"/>
-        <Iconify icon = "solar:user-bold" color="blue"/>
-        <Iconify icon = "solar:add-circle-bold" color="darkgrey"/>
         <section className={style.profile}>
-            <p>the script</p>
-            <p>Meu perfil</p>
+            <div>
+                <p>Meu perfil</p>
+                <p> scripst</p>
+                <p>52 </p>
+            </div>
+            <div>
+                <p>24.5k </p>
+                <p>seguidores</p>
+            </div>
+            <div>
+                <p>1.386</p>
+                <p>seguindo</p>
+            </div>
         </section>
         <Feed/>
     </main>

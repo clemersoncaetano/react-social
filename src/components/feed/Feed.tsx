@@ -40,8 +40,13 @@ export const Feed=({idUsuario}:FeedProps)=>{
         getPosts()
     },[])
     return <section className={style.feed}>
+          <h1>agora...</h1>
+          <p>carolina heff</p>
         {
             loading && <p>Carregando</p>
+        }
+        {
+      
         }
         {
         posts.length === 0 && !loading ?
